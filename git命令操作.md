@@ -1,4 +1,4 @@
-###  **版本控制（GitHub + Typora）**
+<h1 style="text-align: center;"> 版本控制（GitHub + Typora）</h1>
 
 - **推荐工具**：Git + GitHub/Gitee（国内）
 
