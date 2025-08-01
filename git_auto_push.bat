@@ -1,15 +1,42 @@
 @echo off
-echo æ­£åœ¨æ‰§è¡Œ Git è‡ªåŠ¨æäº¤å¹¶æ¨é€...
+echo ÕıÔÚÖ´ĞĞ Git ×Ô¶¯Ìá½»²¢ÍÆËÍ...
 echo.
 
-:: è¿›å…¥å½“å‰è„šæœ¬æ‰€åœ¨ç›®å½•ï¼ˆå¯é€‰ï¼Œå¦‚æœè„šæœ¬å’Œä»“åº“ä¸åœ¨åŒä¸€ç›®å½•éœ€ä¿®æ”¹ï¼‰
-cd /d "%~dp0"
+:: ¼ì²éÊÇ·ñÔÚ Git ²Ö¿âÖĞ
+git rev-parse --is-inside-work-tree >nul 2>&1
+if %errorlevel% neq 0 (
+    echo ´íÎó£ºµ±Ç°Ä¿Â¼²»ÊÇ Git ²Ö¿â£¡
+    pause
+    exit /b
+)
 
-:: æ‰§è¡Œ Git å‘½ä»¤
-git add .
-git commit -m "æ›´æ–°æäº¤"
-git push
+:: ¼ì²éÊÇ·ñÓĞÎÄ¼ş±ä¸ü
+git diff --quiet
+if %errorlevel% equ 0 (
+    echo Ã»ÓĞÎÄ¼ş±ä¸ü£¬ÎŞĞèÌá½»¡£
+    pause
+    exit /b
+)
+
+:: Ö´ĞĞ Git ²Ù×÷
+git add . || (
+    echo ´íÎó£ºgit add Ê§°Ü£¡
+    pause
+    exit /b
+)
+
+git commit -m "¸üĞÂÌá½»" || (
+    echo ´íÎó£ºgit commit Ê§°Ü£¡
+    pause
+    exit /b
+)
+
+git push || (
+    echo ´íÎó£ºgit push Ê§°Ü£¡
+    pause
+    exit /b
+)
 
 echo.
-echo æ“ä½œå®Œæˆï¼
+echo ²Ù×÷³É¹¦Íê³É£¡
 pause
