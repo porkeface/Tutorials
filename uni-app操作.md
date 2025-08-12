@@ -124,3 +124,6 @@ Page({
 })
 ```
 
+## wxss样式
+
+<img src="C:\Users\Hxxim\AppData\Roaming\Typora\typora-user-images\image-20250812201623564.png" alt="image-20250812201623564" style="zoom: 50%;" />
