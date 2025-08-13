@@ -162,14 +162,21 @@ page.chartInstance = chart;
 
 ![image-20250813200148355](C:\Users\Hxxim\AppData\Roaming\Typora\typora-user-images\image-20250813200148355.png)
 
-- 原因：js文件没有page({})项
+- 原因：js文件没有Page({})项
 
   ```js
   //page.js
-  page({
+  Page({
       
   })
   ```
 
-  
 
+
+## 补充
+
+![image-20250813210151208](C:\Users\Hxxim\AppData\Roaming\Typora\typora-user-images\image-20250813210151208.png)
+
+![image-20250813210227245](C:\Users\Hxxim\AppData\Roaming\Typora\typora-user-images\image-20250813210227245.png)
+
+![image-20250813210035794](C:\Users\Hxxim\AppData\Roaming\Typora\typora-user-images\image-20250813210035794.png)
