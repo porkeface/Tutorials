@@ -14,14 +14,8 @@
 
      - 注册服务：
 
-       text
-
-       收起自动换行
-
-       复制
-
        ```
-       nssm install MyNodeService
+nssm install MyNodeService
        ```
 
      - 在弹出的窗口中：
@@ -33,15 +27,9 @@
      - 点击“安装服务”。
 
    - 启动服务：
-
-     text
-
-     收起自动换行
-
-     复制
-
+   
      ```
-     net start MyNodeService
+net start MyNodeService
      ```
 
    - 设置开机自启（可选）：在服务管理器中找到MyNodeService，右键属性，将启动类型设为“自动”。
@@ -52,55 +40,31 @@
 
    - 安装Node.js和npm后，运行：
 
-     text
-
-     收起自动换行
-
-     复制
-
      ```
-     npm install -g pm2
+   npm install -g pm2
      ```
 
    - 启动应用：
 
-     text
-
-     收起自动换行
-
-     复制
-
      ```
-     pm2 start C:\code\uni-app-main\uni-app-main\server\node app.js --name "NodeAPI"
+   pm2 start C:\code\uni-app-main\uni-app-main\server\node app.js --name "NodeAPI"
      ```
 
    - 保存并设置开机自启：
-
-     text
-
-     收起自动换行
-
-     复制
 
      ```
      pm2 save
      pm2 startup
      ```
-
+     
    - 跟随提示执行命令以启用开机启动。
-
+   
    - 查看状态：
-
-     text
-
-     收起自动换行
-
-     复制
-
+   
      ```
      pm2 list
      ```
-
+   
 3. 使用任务计划程序
 
    - 打开“任务计划程序”：
