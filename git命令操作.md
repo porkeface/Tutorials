@@ -90,17 +90,29 @@ git branch -m main
 
 ---
 
-### **7. 用 Typora 编辑后提交更新**
+### **7. 创建分支**
 
-1. 在 Typora 中编辑 Markdown 文件（如 `README.md`）并保存。
-
-2. 通过 Git 提交变更：
-
-   ```bash
-   git add .                        # 添加所有变更文件到暂存区
-   git commit -m "Update tutorial"  # 提交变更到本地仓库
-   git push                         # 推送到远程仓库
+1. ```bash
+   git branch 分支名称
+   //git branch feature
    ```
+
+2. 
+
+### 切换分支
+
+```bash
+1.创建分支
+git checkout ""
+2.创建并切换分支
+git checkout -b feature
+```
+
+### 推送分支到github
+
+```
+git push origin 分支名称
+```
 
 ------
 
